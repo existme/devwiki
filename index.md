@@ -1,52 +1,53 @@
-# Wiki page for everything and everywhere
+# Welcome
 
-~~~.language-bash 
-$ karma start
+Link to the [new page](?p=newpage.md).
 
-~~~
+<!-- Feature note: {{ bd_name }} below is a custom variable. -->
+<!-- Feature note: jbelelieu below is a custom replacement. -->
 
-~~~.language-javascript
-var myFunction = function(){
-  alert('hello world');
-}
-var text = "";
-var i;
-for (i = 0; i < 10; i++) {
-    if (i === 3) { continue; }
-    text += "The number is " + i + "<br>";
-}
-document.getElementById("demo").innerHTML = text;
-~~~
-{: .prettyprint}
+Welcome to {{ bd_name }} by jbelelieu. Here is a very brief quick start guide. For a more in-depth explanation,
+please reference the quick start guide below:
 
-|               | Grouping                    ||
-| First Header  | Second Header | Third header |
-| ------------- | ------------: | :----------: |
-| Content Cell  |  *Long Cell*                ||
-| Content Cell  | **Cell**      | **Cell**     |
+- [More Detailed Quick Start Guide](http://www.bananadance.org/docs/?l=quick_start)
 
-| New section   |   More        |         Data |
-| And more      |           And more          ||
 
-Here's our logo (hover to see the title text):
+## Editing this file
 
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+<!-- Feature note: {{ currentLanguage }} below is a standard variable. -->
 
-Reference-style: 
-![alt text][logo]
+To edit this file, simply open "wiki/{{ currentLanguage }}/index.md" and make your desired changes.
+You can use full [markdown extra](https://michelf.ca/projects/php-markdown/extra/).
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
--   a parent list item (first level of indentation)
-    -   a sub-item in that parent (second level of indentation)
--   continuation of the original list items
 
--   first item
-*   second item
--   third item
+## Creating More Pages
 
-1.   first item
-1.   second item
-    1.  first sub-item
-    1.  second sub-item
-2.   third item
+Simply create a new ".md" file in the "wiki/{{ currentLanguage }}" folder.
+
+### Example
+
+Perhaps you want to create documentation for the "Installation" process of your program? Simply 
+create a file named "wiki/{{ currentLanguage }}/Installation.md". The program will automatically detect it are display 
+it in your primary navigation.
+
+
+## Creating More Categories
+
+<!-- Feature note: "?l=sub_category_sample" below references a named route. -->
+
+Notice how there is an "Example_Subcategory" folder in the "wiki/{{ currentLanguage }}" folder. Also notice how the 
+navigation on the left shows a sub-category named "Example_Subcategory", as well as the "[Sample](?l=subcategory_example)" 
+file within that directory.
+
+That is how you create categories: you a folder anywhere in the "wiki/{{ currentLanguage }}" folder.
+
+## Learn More
+
+This file demonstrates a number of the "advanced" features of Banana Dance, such as:
+
+- [Standard Variables](http://www.bananadance.org/docs/?l=standard_variables)
+- [Custom Variables](http://www.bananadance.org/docs/?l=custom_variables)
+- [Custom Replacements](http://www.bananadance.org/docs/?l=custom_replacements)
+- [Named Routes](http://www.bananadance.org/docs/?l=named_routes)
+
+All of them are marked with comments when you view this file's source. However, if you want to learn more about these 
+features of {{ bd_name }}, please take a moment to read through the [documentation](?l=bd_docs).
