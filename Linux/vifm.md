@@ -6,6 +6,16 @@ To install vifm use
 sudo apt-get install vifm
 ~~~
 
+###Install from source
+~~~bash
+git clone https://github.com/vifm/vifm.git
+./configure
+sudo make install
+sudo cp src/vifm /usr/bin/
+~~~
+
+In case of problems with aclocal see [installing automake][install_automake]
+
 ## Documentation
 
 1. Vifm Manual [page][vifm_manual]
@@ -93,3 +103,4 @@ without any parameters to see the current key bindings in each mode respectively
 [vifm_doc]: http://vifm.info/vimdoc.shtml#vifm-general-keys
 [vifm_txt]: http://src.gnu-darwin.org/ports/misc/vifm/work/vifm-0.3a/src/vifm.txt
 [vifm_cmd_src] : https://github.com/vifm/vifm/blob/master/src/modes/normal.c
+[install_automake]: ?c=Linux&p=build-and-install.md
