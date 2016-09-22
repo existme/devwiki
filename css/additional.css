@@ -1,0 +1,26 @@
+#rightSide {
+    font-family: 'Ubuntu';
+    font-size: 1.3em;
+
+}
+
+#rightSide p{
+    line-height: 1.2em !important;
+}
+
+#rightSide h1,
+#rightSide h2,
+#rightSide h3,
+#rightSide h4 {
+    font-family: 'Segoe UI Semibold' !important;
+}
+
+/*To support scrolling on the left menu*/
+#leftSide {
+    height:400px;
+}
+
+/* No shadow for code blocks */
+pre, blockquote {
+    text-shadow: none;
+}
