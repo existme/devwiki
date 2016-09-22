@@ -1,10 +1,2 @@
-vendor
 .DS_Store
 .idea
-/app/
-/vendor/
-/composer.json
-/config.php
-/LICENSE
-/index.php
-/composer.lock
