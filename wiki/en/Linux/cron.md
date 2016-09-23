@@ -26,5 +26,7 @@ sudo crontab -e
 #run the job every 1 hour
 0 */1 * * * pi /media/mypath/git-backup-script.sh
 
+#run the job exactly at 00:00 everyday
+0 0 * * * /media/pi/My\ Book/git/wiki/git-backup-script.sh
 ~~~
 

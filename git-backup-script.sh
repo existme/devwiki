@@ -4,6 +4,6 @@ cd /media/pi/My\ Book/git/wiki
 
 git checkout draft
 git add *
-git commit -a -m "latest update"
+git commit -a -m "Auto updating draft changes"
 git push
 
