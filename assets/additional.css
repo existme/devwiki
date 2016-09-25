@@ -23,6 +23,7 @@
 /* No shadow for code blocks */
 pre, blockquote {
     text-shadow: none;
+    font-size: 1.01em;
 }
 
 ic {
@@ -30,7 +31,7 @@ ic {
     font-size: .8em;
     border:  rgba(0, 0, 0, 0.16) 1px solid;
     border-radius: 3px;
-    background-color: rgba(249, 251, 179, 0.16);
-    padding: 2px 4px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    background-color: #e6e6e6;
+    padding: 1px 4px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
 }

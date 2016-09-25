@@ -1,0 +1,1 @@
+$('h1').slice(2).before("<br><hr>");

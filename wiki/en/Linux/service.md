@@ -56,4 +56,45 @@ stop the service. You need to do this separately.
 Service files are located in <ic>/lib/systemd/system</ic> 
 
 
+## Sample mount service using <ic>serviced</ic>
+Let's assume that we want to write a service which automatically will 
+mount a <ic>sshfs</ic> file system after system is booted and network is 
+up. We can't just simply add it to <ic>fstab</ic> because at that time
+network might not be available. Let's assume that we want to mount the
+filesystem into this folder: <ic>/media/pi/WD</ic>.
+
+### Creating the service file
+Inorder to proceed, you need to create a file **exactly** with this name
+and in this path: <ic>/etc/systemd/system/media-pi-WD.mount</ic>. The file
+should look like as follows:
+~~~shell
+[Unit]
+Description=WD Sshfs mount
+Requires=network-online.target
+After=netctl@enp0s25.service
+
+[Mount]
+What=root@192.168.0.50:/DataVolume/shares/WD
+Where=/media/pi/WD
+Type=fuse.sshfs
+Options=_netdev,user,idmap=user,default_permissions,uid=vagrant,gid=pi,allow_other,transform_symlinks
+
+[Install]
+WantedBy=multi-user.target
+~~~
+### Enabling the service
+Next, we need to enable the service, by issuing:
+~~~shell
+sudo systemctl enable media-pi-WD.mount
+~~~
+### Query the status of the service
+To see how the server is doing you can start it manually, by issuing:
+~~~shell
+sudo systemctl start media-pi-WD.mount
+~~~
+And then query its status by entering:
+~~~shell
+sudo systemctl status media-pi-WD.mount
+~~~
+
 [jg-link]: https://medium.com/@johannes_gehrs/getting-started-with-systemd-on-debian-jessie-e024758ca63d#.h0c3zxsxl

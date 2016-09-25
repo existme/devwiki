@@ -16,3 +16,7 @@ command prompt and issue:
 ~~~sh
 net stop workstation /y && net start workstation
 ~~~
+
+To remove disconnected network drives got the the following registry key:
+<ic>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2</ic> 
+and remove redundant keys. (Not tested yet, but needs a restart)
