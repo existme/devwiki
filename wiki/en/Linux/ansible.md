@@ -61,6 +61,18 @@
     mode: 755
     state: directory
 ~~~
+
+- **cron**: <http://docs.ansible.com/ansible/cron_module.html>
+
+~~~yaml
+- name: Create sudo crontab after restart
+  cron:
+    name: "Restart transmission on reboot (to ensure that it is running"
+    special_time: reboot
+    job: "systemctl restart transmission-daemon"
+~~~
+
+
 ## Examples
 
 ### Debug
@@ -69,6 +81,4 @@
 - debug: msg="System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}"
   when: ansible_default_ipv4.gateway is defined
 ~~~
-
-### get_url
 
