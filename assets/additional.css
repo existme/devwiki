@@ -12,7 +12,7 @@
 #rightSide h2,
 #rightSide h3,
 #rightSide h4 {
-    font-family: 'Segoe UI Semibold' !important;
+    font-family: 'Segoe UI Semibold', "AppleGothic" !important;
 }
 
 /*To support scrolling on the left menu*/
@@ -27,7 +27,7 @@ pre, blockquote {
 }
 
 ic {
-    font-family: "Consolas" !important;
+    font-family: "Inconsolata-g for Powerline", "Consolas" !important;
     font-size: .8em;
     border:  rgba(0, 0, 0, 0.16) 1px solid;
     border-radius: 3px;

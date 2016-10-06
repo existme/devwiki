@@ -1,5 +1,4 @@
 #SSH
-
 ## Configuring SSH over a proxy
 
 There are number of things that should be done when you are behind a 
@@ -23,3 +22,13 @@ ProxyCommand ~/.ssh/corkscrew your.proxy.address 3128 %h %p
 
 The following page also describes the other methods: 
 [SSH Through or Over Proxy](https://daniel.haxx.se/docs/sshproxy.html)
+
+# Adding your rsa.pub to the authirized_keys on a target machine
+
+Issue the following command:
+~~~shell
+ssh-copy-id user@host
+~~~
+
+## Installation of ssh-copy-id:
+ - **MAC**: <ic>curl -L https://raw.githubusercontent.com/beautifulcode/ssh-copy-id-for-OSX/master/install.sh | sh </ic>
