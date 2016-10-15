@@ -8,9 +8,8 @@
 
 ~~~git
 git remote add gerrit https://{server name}/gerrit/{gitrepo}
-~~~
+~~~vc`  14y5t `1 vc 
 
   - <ic>gitrepo</ic> could include subfolders and be like <ic>department/project</ic>.
   A better way of doing this properly is by checking out the repo using http url
   instead of ssh url.
-    
