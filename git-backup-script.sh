@@ -12,4 +12,5 @@ cd wiki/en
 rm .git/index.lock
 git add .
 git commit -a -m "Auto updating wiki draft changes"
+git pull
 git push
