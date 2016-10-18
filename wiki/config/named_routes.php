@@ -25,5 +25,5 @@ return array(
     // Create a link anywhere on your pages that reads:
     // ?l=subcategory_example
     'subcategory_example' => 'Example_Subcategory/Sample.md',
-
+    'spring-arguments' => 'development/spring/spring-arguments.md',
 );

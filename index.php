@@ -28,7 +28,7 @@ require "app/global.php";
 $requestedLink = (! empty($_GET['l'])) ? htmlentities($_GET['l']) : '';
 
 if (! empty($requestedLink)) {
-    $routes = require "app/config/named_routes.php";
+    $routes = require "wiki/config/named_routes.php";
 
     if (array_key_exists($requestedLink, $routes)) {
 
