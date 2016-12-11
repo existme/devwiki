@@ -80,6 +80,7 @@ class Structure {
 
         foreach (scandir($dir) as $node) {
             if (substr($node, 0, 1) == '.')  continue;
+            if ($node == 'img') continue;
 
             $path = $dir . DIRECTORY_SEPARATOR . $node;
 

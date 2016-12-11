@@ -58,7 +58,8 @@ function findName($page, $lang = '')
     $exp = explode('/', $page);
 
     $last = array_pop($exp);
-
+    $pattern = '/(\w+)_/i';
+    $last = preg_replace($pattern, '', $last);
     return str_replace('_', ' ', str_replace('.md', '', $last));
 }
 
