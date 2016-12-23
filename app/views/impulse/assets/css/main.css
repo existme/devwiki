@@ -177,9 +177,7 @@ a.anchor {
 #leftSide ul ul {
     border-left: 0px;
     border-right: 0px;
-/*
     border-left: 1px solid #ccc;
-*/
     padding-left: 12px;
     padding-bottom: 0px;
 }
