@@ -130,10 +130,12 @@ class Structure {
 
                 $key = \App\findName($check);
 
-                $out .= "<li class=\"$class\"><a href=\"" . $elem . "\">" . $key . "</a></li>";
+//                $out .= "<li class=\"$class\"><a href=\"" . $elem . "\">" . $key . "</a></li>";
+                $out .= "<li class=\"$class\" page=\"" . $elem . "\">" . $key . "</li>";
             }
             else {
-                $out .= "<li><span class=\"subTitle\">" . $key . "</span>" . $this->buildUl($elem) . "</li>";
+//                $out .= "<li><span class=\"subTitle\">" . $key . "</span>" . $this->buildUl($elem) . "</li>";
+                $out .= "<li>" . $key . $this->buildUl($elem) . "</li>";
             }
         }
 

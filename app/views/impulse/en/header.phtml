@@ -19,9 +19,11 @@
     <script>hljs.initHighlightingOnLoad();</script>
     <!-- End: Syntax Highlighting -->
 
-    <link rel="stylesheet" href="/assets/additional.css">
+    <link rel="stylesheet" href="assets/additional.css">
     <script type="text/javascript" src="{{ vendor }}/components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="{{ assets }}/js/mobileMenu.js"></script>
+    <script type="text/javascript" src="{{ vendor }}/components/jTree/jstree.min.js"></script>
+    <link rel="stylesheet" href="{{ vendor }}/components/jTree/themes/default/style.min.css" />
 
     <link rel="icon"
           type="image/png"
@@ -53,7 +55,9 @@
         <input type="text" name="q" value="{{ query }}" /> <button type="submit">Go</button>
         </form>
     </div>
-    {{ navigation }}
+     <div id="jstree_div">
+        {{ navigation }}
+     </div>
 </div>
 <div id="rightSide">
     <div id="subnav">
