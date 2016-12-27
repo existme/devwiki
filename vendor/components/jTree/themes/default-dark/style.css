@@ -35,7 +35,7 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: center;
 }
 .jstree-icon:empty {
@@ -1143,4 +1143,8 @@
 }
 .jstree-default-dark-large.jstree-rtl .jstree-last {
   background: transparent;
+}
+
+#leftSide {
+  background: #333 !important;
 }
