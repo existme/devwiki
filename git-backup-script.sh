@@ -9,6 +9,7 @@ git commit -a -m "Auto updating bananadance changes"
 git push
 
 cd wiki/en
+git checkout master
 rm /media/pi/My\ Book/git/wiki/.git/modules/wiki/en/index.lock
 /usr/bin/env python gen_sidebar
 git add .
