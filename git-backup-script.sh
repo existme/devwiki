@@ -16,3 +16,4 @@ git commit -a -m "Auto updating wiki draft changes"
 git pull
 git push
 cd /media/pi/My\ Book/git/wiki
+git submodule update
