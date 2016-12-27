@@ -19,11 +19,11 @@
 #leftSide {
     height:400px;
     width: 400px;
-    font-family: 'Ubuntu';
+
 }
 
 #leftSide ul {
-    /*font-size: 1.0em;*/
+    font-size: 1.1em;
     /*!*font-weight: 100;*!*/
 }
 
