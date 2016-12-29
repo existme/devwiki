@@ -2,14 +2,14 @@
 
 cd /media/pi/My\ Book/git/wiki
 
-git checkout draft
+#git checkout draft
 rm .git/index.lock
 git add .
 git commit -a -m "Auto updating bananadance changes"
 git push
 
 cd wiki/en
-git checkout master
+#git checkout master
 rm /media/pi/My\ Book/git/wiki/.git/modules/wiki/en/index.lock
 /usr/bin/env python gen_sidebar
 git add .
