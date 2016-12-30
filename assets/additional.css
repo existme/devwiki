@@ -12,7 +12,7 @@
 #rightSide h2,
 #rightSide h3,
 #rightSide h4 {
-    font-family: 'Segoe UI Semibold', "AppleGothic" !important;
+    font-family: 'Segoe UI Semibold', "Muli" !important;
 }
 
 /*To support scrolling on the left menu*/
@@ -73,9 +73,4 @@ kbd {
 
 li.jstree-leaf > a .jstree-icon{
     background:url("/vendor/components/jTree/themes/icons/doc11.png") 0px 0px no-repeat !important;
-}
-
-@font-face {
-    font-family: "AppleGothic";
-    src: url(/app/views/impulse/assets/fonts/AppleGothic.ttf) format("truetype");
 }
