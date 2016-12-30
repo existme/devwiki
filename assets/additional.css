@@ -34,7 +34,7 @@ pre, blockquote {
 }
 
 ic,code:not(.hljs) {
-    font-family: "Inconsolata-g for Powerline", "Consolas" !important;
+    font-family: "Inconsolata-g for Powerline","Inconsolata", "Consolas" !important;
     font-size: .8em;
     border:  rgba(0, 0, 0, 0.16) 1px solid;
     border-radius: 3px;
