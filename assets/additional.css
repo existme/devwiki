@@ -72,5 +72,5 @@ kbd {
 }
 
 li.jstree-leaf > a .jstree-icon{
-    background:url("/vendor/components/jTree/themes/icons/doc11.png") 0px 0px no-repeat !important;
+    background:url("../vendor/components/jTree/themes/icons/doc11.png") 0px 0px no-repeat !important;
 }
