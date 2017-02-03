@@ -24,14 +24,16 @@
 
 #leftSide ul {
     font-size: 1.1em;
-    /*!*font-weight: 100;*!*/
 }
 
 /* No shadow for code blocks */
 pre, blockquote {
     text-shadow: none;
     font-size: 1.01em;
+    white-space: pre-wrap;
     overflow: visible;
+    display: inline-block;
+    width: 100%;
 }
 
 ic,code:not(.hljs) {
