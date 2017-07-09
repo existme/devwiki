@@ -1,9 +1,7 @@
 $('h1').slice(2).before("<br><hr>");
-<<<<<<< HEAD
 $('span code').each(function(i, inline) {
     hljs.highlightBlock(inline);
 });
-=======
 
 $("#jstree_div").jstree({
     "conditionalselect": function (node) {
@@ -32,4 +30,3 @@ $(document).on('click', '.jstree-anchor', function (e) {
 $(function () {
     $('#jstree_div').jstree();
 });
->>>>>>> master

@@ -37,11 +37,7 @@ pre, blockquote {
 }
 
 ic,code:not(.hljs) {
-<<<<<<< HEAD
-    font-family: "Inconsolata-g for Powerline", "Consolas" !important;
-=======
     font-family: "Inconsolata-g for Powerline","Inconsolata", "Consolas" !important;
->>>>>>> master
     font-size: .8em;
     border:  rgba(0, 0, 0, 0.16) 1px solid;
     border-radius: 3px;
@@ -49,12 +45,9 @@ ic,code:not(.hljs) {
     padding: 1px 4px !important;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
 }
-<<<<<<< HEAD
-=======
 red {
     color: #9d0006;
 }
->>>>>>> master
 kbd {
     display: inline-block;
     margin: 0 .1em;
@@ -71,8 +64,6 @@ kbd {
     box-shadow: 0 1px 0 rgba(12,13,14,0.2), 0 0 0 2px #FFF inset;
     white-space: nowrap;
 }
-<<<<<<< HEAD
-=======
 
 #topbar {
     -webkit-box-shadow: 0 2px 9px 0 #222;
@@ -86,4 +77,3 @@ kbd {
 li.jstree-leaf > a .jstree-icon{
     background:url("../vendor/components/jTree/themes/icons/doc11.png") 0px 0px no-repeat !important;
 }
->>>>>>> master
