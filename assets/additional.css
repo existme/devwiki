@@ -1,7 +1,7 @@
 #rightSide {
     font-family: 'Ubuntu';
     font-size: 1.3em;
-
+    /*padding-left: 400px;*/
 }
 
 #rightSide p{
@@ -12,22 +12,36 @@
 #rightSide h2,
 #rightSide h3,
 #rightSide h4 {
-    font-family: 'Segoe UI Semibold', "AppleGothic" !important;
+    font-family: 'Segoe UI Semibold', "Muli" !important;
 }
 
 /*To support scrolling on the left menu*/
 #leftSide {
     height:400px;
+    width: 400px;
+
+}
+
+#leftSide ul {
+    font-size: 1.1em;
 }
 
 /* No shadow for code blocks */
 pre, blockquote {
     text-shadow: none;
     font-size: 1.01em;
+    white-space: pre-wrap;
+    overflow: visible;
+    display: inline-block;
+    width: 100%;
 }
 
 ic,code:not(.hljs) {
+<<<<<<< HEAD
     font-family: "Inconsolata-g for Powerline", "Consolas" !important;
+=======
+    font-family: "Inconsolata-g for Powerline","Inconsolata", "Consolas" !important;
+>>>>>>> master
     font-size: .8em;
     border:  rgba(0, 0, 0, 0.16) 1px solid;
     border-radius: 3px;
@@ -35,6 +49,12 @@ ic,code:not(.hljs) {
     padding: 1px 4px !important;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
 }
+<<<<<<< HEAD
+=======
+red {
+    color: #9d0006;
+}
+>>>>>>> master
 kbd {
     display: inline-block;
     margin: 0 .1em;
@@ -51,3 +71,19 @@ kbd {
     box-shadow: 0 1px 0 rgba(12,13,14,0.2), 0 0 0 2px #FFF inset;
     white-space: nowrap;
 }
+<<<<<<< HEAD
+=======
+
+#topbar {
+    -webkit-box-shadow: 0 2px 9px 0 #222;
+    box-shadow: 0 2px 9px 0 #222;
+}
+
+#leftSide ul ul {
+    border-left: none;
+}
+
+li.jstree-leaf > a .jstree-icon{
+    background:url("../vendor/components/jTree/themes/icons/doc11.png") 0px 0px no-repeat !important;
+}
+>>>>>>> master
