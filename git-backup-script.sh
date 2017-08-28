@@ -13,7 +13,7 @@ git submodule update
 cd /media/pi/My\ Book/git/wiki
 
 rm .git/index.lock
-git add 
+git add .
 git commit -a -m "Auto updating bananadance changes"
 git push origin master
 
