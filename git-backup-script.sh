@@ -17,3 +17,6 @@ git add .
 git commit -a -m "Auto updating bananadance changes"
 git push
 
+git checkout master
+cd /media/pi/My\ Book/git/wiki/wiki/en
+git checkout master
