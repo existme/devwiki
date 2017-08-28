@@ -8,8 +8,8 @@ git commit -a -m "Auto updating wiki draft changes"
 git pull
 git push origin master
 
-cd /media/pi/My\ Book/git/wiki
-git submodule update
+#cd /media/pi/My\ Book/git/wiki
+#git submodule update
 cd /media/pi/My\ Book/git/wiki
 
 rm .git/index.lock
