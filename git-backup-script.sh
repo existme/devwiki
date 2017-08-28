@@ -1,7 +1,6 @@
 #!/bin/sh
 
 cd /media/pi/My\ Book/git/wiki/wiki/en
-#git checkout master
 rm /media/pi/My\ Book/git/wiki/.git/modules/wiki/en/index.lock
 /usr/bin/env python gen_sidebar
 git add .
@@ -13,7 +12,6 @@ cd /media/pi/My\ Book/git/wiki
 git submodule update
 cd /media/pi/My\ Book/git/wiki
 
-#git checkout draft
 rm .git/index.lock
 git add .
 git commit -a -m "Auto updating bananadance changes"
